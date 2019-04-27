@@ -1,0 +1,190 @@
+/* BRIGHT ROUNDED INPUT FIELD WITH ICON AND TITLE*/
+.rich-input {
+  position: relative;
+  border-radius: 10px;
+  background-color: #FFF;
+  color: black;
+  /* width: 500px; */
+  height: 50px;
+  margin: 15px 0;
+}
+.rich-input p {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.2rem;
+  top: 5px;
+  left: 60px;
+  z-index: 1;
+}
+.rich-input img {
+  position: absolute;
+  width: 30px;
+  height: auto;
+  top: 8px;
+  left: 15px;
+}
+.rich-input input, .rich-input select {
+  position: absolute;
+  top: 11px;
+  left: 50px;
+  color: black;
+  border: none;
+  width: 86%;
+}
+.rich-input select {
+  width: 66%;
+}
+.rich-input .icon {
+  left: 85%;
+}
+.rich-input input[type="text"],.rich-input input[type="text"]:focus,
+.rich-input input[type="password"],.rich-input input[type="password"]:focus,
+.rich-input select, .rich-input select:focus {
+  border: none;
+}
+
+/* SOCIAL BUTTON */
+.social-button {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  text-align: center;
+}
+.social-button:hover, .classic-button:hover {
+  /* box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.75);
+  transform: translate(-1px,-1px); */
+}
+.social-button img {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 13px;
+}
+.social-button p {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.2rem;
+  left: 55%;
+  transform: translateX(-50%);
+  top: 15px;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: max-content;
+}
+.social-button-shade {
+  position: absolute;
+  border-radius: 10px 0 0 10px;
+  width: 55px;
+  height: 50px;
+  opacity: 0.3;
+  background-color: black;
+
+}
+
+
+/* CLASSIC BUTTON */
+.classic-button {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+  text-align: center;
+}
+.classic-button p {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: max-content;
+}
+
+.small-button {
+  position: relative;
+  border-radius: 10px;
+  width: 100px;
+  height: 50px;
+  margin: 15px 0 15px 0;
+  text-align: center;
+}
+
+.small-button p {
+  position: absolute;
+  font-weight: 600;
+  font-size: 1.4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  width: max-content;
+}
+
+.back-button {
+  float: left;
+  margin-right: 15px;
+}
+
+@media (min-width: 550px) {
+  .rich-input input {
+    width:75%;
+  }
+  .social-button p {
+    font-size: 0.9rem;
+    left: 60%;
+    top: 18px;
+  }
+  .classic-button p {
+    font-size: 0.9rem;
+    left: 50%;
+    top: 18px;
+  }
+  .back-button {
+    position: relative;
+    float: left;
+  }
+
+}
+
+@media (min-width: 750px) {
+  .rich-input input {
+    width:82%;
+  }
+  .social-button p {
+    font-size: 1.2rem;
+    left: 55%;
+    top: 16px;
+  }
+  .classic-button p {
+    font-size: 1.2rem;
+    top: 16px;
+  }
+  .back-button {
+    float: right;
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rich-input input {
+    width:87%;
+  }
+  .social-button p {
+    font-size: 1.4rem;
+    left: 55%;
+    top: 14px;
+  }
+  .classic-button p {
+    font-size: 1.4rem;
+    left: 50%;
+    top: 14px;
+  }
+}
